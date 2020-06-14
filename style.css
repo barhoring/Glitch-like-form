@@ -1,0 +1,137 @@
+* {
+  font-family: "Benton Sans", Helvetica, sans-serif;
+  border: 1px solid blue;
+}
+
+form * {
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  /* display: flex; */
+}
+
+.amount.container {
+  justify-content: space-between;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button {
+  border: 2px solid rgb(34, 34, 34);
+  /* border-radius: 5px; */
+  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  color: rgb(34, 34, 34);
+  background-color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 11px;
+  text-align: left;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.give-now {
+  background-color: rgb(131, 255, 205);
+  box-shadow: 4px 4px 0 rgb(34, 34, 34);
+}
+
+.give-now:hover {
+  box-shadow: 2px 2px 0;
+}
+
+.amount {
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  /* flex-grow: 1; */
+  flex-direction: row;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.amount .wrapper {
+  background-color: antiquewhite;
+  padding: 0;
+}
+
+.input-amount {
+  /* flex: 1; */
+
+  /* field styles */
+  border-style: solid;
+  border-color: rgba(147, 128, 108, 0.25);
+  border-width: 1px 1px 1px 0px;
+  border-radius: 0 5px 5px 0;
+  padding: 0.5em 0.75em;
+  width: 4rem;
+}
+
+.input-prefix {
+  /* display: flex; */
+
+  /* item styles */
+  border-radius: 5px 0 0 5px;
+  border-style: solid;
+  border-color: rgba(147, 128, 108, 0.25);
+  border-width: 1px 0px 1px 1px;
+  padding: 0.5em 0.75em;
+}
+
+/* .amount-raised-bar:hover {
+  box-shadow: 4px 4px 0 rgb(34, 34, 34);
+} */
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  bottom: 2.5rem;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
