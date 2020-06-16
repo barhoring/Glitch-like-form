@@ -1,6 +1,6 @@
 * {
   font-family: "Benton Sans", Helvetica, sans-serif;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 form * {
@@ -93,15 +93,18 @@ form * {
   padding: 0.5em 0.75em;
 }
 
-/* .amount-raised-bar:hover {
-  box-shadow: 4px 4px 0 rgb(34, 34, 34);
-} */
+.amount-raised-bar.tooltip {
+  width: 65%;
+  background-color: rgb(255, 176, 176);
+  height: 1rem;
+  padding: 0;
+}
 
 /* Tooltip container */
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  border-bottom: 1px solid black; /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
@@ -134,4 +137,8 @@ form * {
   border-width: 5px;
   border-style: solid;
   border-color: black transparent transparent transparent;
+}
+
+.column {
+  flex-direction: column;
 }
