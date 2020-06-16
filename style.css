@@ -1,16 +1,11 @@
 * {
   font-family: "Benton Sans", Helvetica, sans-serif;
-  /* border: 1px solid blue; */
 }
 
 form * {
-  /* border-radius: 5px; */
   flex-direction: column;
-  /* justify-content: space-between; */
   justify-content: flex-start;
   padding: 1rem;
-  /* background: #ffc761; */
-  /* display: flex; */
 }
 
 .form-container {
@@ -31,7 +26,6 @@ form * {
 .amount.container {
   justify-content: space-around;
   align-items: initial;
-  /* padding: 0; */
 }
 
 .main {
@@ -61,7 +55,6 @@ form * {
   font-size: 15px;
   text-align: left;
   cursor: pointer;
-  /* box-sizing: border-box; */
 }
 
 .bottom-button:hover {
@@ -84,7 +77,6 @@ form * {
 }
 
 .text {
-  /* flex-grow: 1; */
   flex-direction: row;
   padding: 0;
 }
@@ -95,17 +87,12 @@ form * {
 }
 
 .amount .wrapper {
-  /* background-color: white; */
   padding: 0;
 }
 
 .input-amount {
-  /* flex: 1; */
-
-  /* field styles */
   border-style: solid;
   border-color: #222222;
-  /* border-color: rgba(147, 128, 108, 0.25); */
   border-width: 1px 1px 1px 0px;
   border-radius: 0 5px 5px 0;
   padding: 0.5em 0.75em;
@@ -117,9 +104,7 @@ form * {
 }
 
 .input-prefix {
-  /* display: flex; */
   background-color: #e5e5e5;
-  /* item styles */
   border-radius: 5px 0 0 5px;
   border-style: solid;
   border-color: #222222;
@@ -139,21 +124,17 @@ form * {
   font-weight: 600;
 }
 
-/* Tooltip container */
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px solid black; /* If you want dots under the hoverable text */
+  border-bottom: 1px solid black;
   width: 100%;
   box-shadow: 2px 2px 0 rgb(34, 34, 34);
-
-  /* border: 1px solid #768590; */
   padding: 0;
   height: 1rem;
   background-color: #e5e5e5;
 }
 
-/* Tooltip text */
 .tooltip .tooltiptext {
   bottom: 1.1rem;
   visibility: hidden;
@@ -163,13 +144,10 @@ form * {
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
-
-  /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
@@ -177,7 +155,7 @@ form * {
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
-  top: 100%; /* At the bottom of the tooltip */
+  top: 100%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
@@ -192,7 +170,6 @@ form * {
 .why {
   color: #3652d3;
   padding: 0;
-  /* font-size: x-small; */
   justify-content: center;
 }
 
