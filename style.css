@@ -43,7 +43,7 @@ form * {
   color: rgb(34, 34, 34);
   background-color: rgb(255, 255, 255);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 15px;
   text-align: left;
   cursor: pointer;
   /* box-sizing: border-box; */
@@ -56,6 +56,7 @@ form * {
 .give-now {
   background-color: rgb(131, 255, 205);
   box-shadow: 4px 4px 0 rgb(34, 34, 34);
+  padding: inherit;
 }
 
 .give-now:hover {
