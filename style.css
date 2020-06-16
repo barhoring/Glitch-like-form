@@ -46,6 +46,7 @@ form * {
 }
 
 .button {
+  outline: none;
   border: 2px solid rgb(34, 34, 34);
   border-radius: 5px;
   padding: 0.3rem 0.5rem 0.3rem 0.5rem;
