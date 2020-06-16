@@ -107,7 +107,7 @@ form * {
   padding: 0.5em 0.75em;
 }
 
-.amount-raised-bar.tooltip {
+.amount-raised-bar {
   width: 65%;
   background-color: rgb(255, 176, 176);
   height: 1rem;
@@ -123,7 +123,7 @@ form * {
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-  bottom: 2.5rem;
+  bottom: 1.1rem;
   visibility: hidden;
   width: 120px;
   background-color: black;
