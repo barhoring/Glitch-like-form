@@ -8,53 +8,51 @@
   </head>
   <body>
     <div class="main container">
-      <div style="width: 400px;">
-        <form action="/">
-          <div style="background-color: cornsilk;">
-            <div style="padding: 0;">
-              <div
-                class="amount-raised-bar tooltip"
-                style="
-                  width: 65%;
-                  background-color: rgb(255, 176, 176);
-                  height: 0.1rem;
-                "
-              >
-                <span class="tooltiptext"
-                  >$167 still needed for this project</span
-                >
-              </div>
-            </div>
-            <div class="text">
-              <div class="wrapper" style="flex-direction: column;">
-                <div style="padding: 0%; font-weight: 600;">
-                  Only 3 days left to fund this project.
+      <div class="form-container">
+        <form>
+          <div class="info-container">
+            <div class="info">
+              <div class="text">
+                <div class="tooltip">
+                  <span class="tooltiptext"
+                    >$167 still needed for this project</span
+                  >
+                  <div class="amount-raised-bar"></div>
                 </div>
-                Join the 42 other donors who have already supported this
-                project. Every dollar helps
-              </div>
-            </div>
-            <div class="amount container">
-              <div>
-                <div class="wrapper">
-                  <span class="input-prefix">$</span>
-                  <input
-                    type="numbers"
-                    class="input-amount"
-                    id="amount"
-                    value="50"
-                  />
+                <div class="wrapper column">
+                  <div class="days-left">
+                    Only 3 days left to fund this project.
+                  </div>
+                  Join the 42 other donors who have already supported this
+                  project. Every dollar helps
                 </div>
-                <label style="padding: 0;" for="amount">Why give 50$?</label>
               </div>
-              <button class="give-now button">Give now</button>
+              <div class="amount container">
+                <div class="no-padding">
+                  <div class="wrapper">
+                    <span class="input-prefix">$</span>
+                    <input
+                      type="number"
+                      class="input-amount"
+                      id="amount"
+                      value="50"
+                    />
+                  </div>
+                  <label class="why">Why give 50$?</label>
+                </div>
+                <button type="button" class="give-now button">Give now</button>
+              </div>
             </div>
           </div>
 
           <br />
           <div class="buttons container">
-            <button class="button">Save for later</button>
-            <button class="button">Tell your friends</button>
+            <button type="button" class="button bottom-button">
+              Save for later
+            </button>
+            <button type="button" class="button bottom-button">
+              Tell your friends
+            </button>
           </div>
         </form>
       </div>

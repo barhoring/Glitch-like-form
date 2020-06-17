@@ -1,18 +1,31 @@
 * {
   font-family: "Benton Sans", Helvetica, sans-serif;
-  border: 1px solid blue;
 }
 
 form * {
-  border-radius: 5px;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 1rem;
-  /* display: flex; */
+}
+
+.form-container {
+  width: 400px;
+  background-color: #cbe9ff;
+}
+
+.info-container {
+  background-color: #c454ff;
+  padding: 1rem;
+}
+
+.info {
+  border-radius: 5px;
+  background-color: #fae7e5;
 }
 
 .amount.container {
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: initial;
 }
 
 .main {
@@ -28,22 +41,31 @@ form * {
   align-items: center;
 }
 
+.buttons {
+  padding-top: 0;
+}
+
 .button {
+  outline: none;
   border: 2px solid rgb(34, 34, 34);
-  /* border-radius: 5px; */
+  border-radius: 5px;
   padding: 0.3rem 0.5rem 0.3rem 0.5rem;
   color: rgb(34, 34, 34);
   background-color: rgb(255, 255, 255);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 15px;
   text-align: left;
   cursor: pointer;
-  box-sizing: border-box;
+}
+
+.bottom-button:hover {
+  background-color: rgb(245, 245, 245);
 }
 
 .give-now {
   background-color: rgb(131, 255, 205);
   box-shadow: 4px 4px 0 rgb(34, 34, 34);
+  padding: inherit;
 }
 
 .give-now:hover {
@@ -56,8 +78,8 @@ form * {
 }
 
 .text {
-  /* flex-grow: 1; */
   flex-direction: row;
+  padding: 0;
 }
 
 .wrapper {
@@ -66,47 +88,56 @@ form * {
 }
 
 .amount .wrapper {
-  background-color: antiquewhite;
   padding: 0;
 }
 
 .input-amount {
-  /* flex: 1; */
-
-  /* field styles */
   border-style: solid;
-  border-color: rgba(147, 128, 108, 0.25);
+  border-color: #222222;
   border-width: 1px 1px 1px 0px;
   border-radius: 0 5px 5px 0;
   padding: 0.5em 0.75em;
   width: 4rem;
 }
 
-.input-prefix {
-  /* display: flex; */
+.no-padding {
+  padding: 0;
+}
 
-  /* item styles */
+.input-prefix {
+  background-color: #e5e5e5;
   border-radius: 5px 0 0 5px;
   border-style: solid;
-  border-color: rgba(147, 128, 108, 0.25);
+  border-color: #222222;
   border-width: 1px 0px 1px 1px;
   padding: 0.5em 0.75em;
 }
 
-/* .amount-raised-bar:hover {
-  box-shadow: 4px 4px 0 rgb(34, 34, 34);
-} */
+.amount-raised-bar {
+  width: 65%;
+  background-color: rgb(255, 176, 176);
+  height: 1rem;
+  padding: 0;
+}
 
-/* Tooltip container */
+.days-left {
+  padding: 0;
+  font-weight: 600;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  border-bottom: 1px solid black;
+  width: 100%;
+  box-shadow: 2px 2px 0 rgb(34, 34, 34);
+  padding: 0;
+  height: 1rem;
+  background-color: #e5e5e5;
 }
 
-/* Tooltip text */
 .tooltip .tooltiptext {
-  bottom: 2.5rem;
+  bottom: 1.1rem;
   visibility: hidden;
   width: 120px;
   background-color: black;
@@ -114,13 +145,10 @@ form * {
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
-
-  /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
@@ -128,10 +156,24 @@ form * {
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
-  top: 100%; /* At the bottom of the tooltip */
+  top: 100%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
   border-color: black transparent transparent transparent;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.why {
+  color: #3652d3;
+  padding: 0;
+  justify-content: center;
+}
+
+.amount .container .wrapper {
+  justify-content: flex-start;
 }
